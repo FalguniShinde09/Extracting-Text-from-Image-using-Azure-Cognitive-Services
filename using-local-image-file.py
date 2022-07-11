@@ -26,7 +26,7 @@ while True:
     read_result = computervision_client.get_read_result(operation_id)
     if read_result.status not in ['notStarted', 'running']:
         break
-    time.sleep(2)
+    time.sleep(1)
 
 if read_result.status == OperationStatusCodes.succeeded:
     text = ''
